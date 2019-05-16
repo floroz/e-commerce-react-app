@@ -14,10 +14,10 @@ function App() {
 		<>
 			<Navbar />
 			<Switch>
-				<Route path='/' exact component={Details} />
-				<Route path='/' component={Cart} />
-				<Route path='/' component={ProductList} />
-				<Route path='*' component={PageNotFound} />
+				<Route path='/' exact component={ProductList} />
+				<Route path='/details' exact component={Details} />
+				<Route path='/cart' component={Cart} />
+				<Route component={PageNotFound} />
 			</Switch>
 		</>
 	);
